@@ -1,0 +1,10 @@
+def selection(arr):
+    for y in range(0,len(arr)-1):
+        min=y
+        for x in range((y+1),len(arr)):
+            if (arr[x]<arr[min]):
+                min=x
+        arr[y],arr[min]=arr[min],arr[y]
+arr=eval(input("Enter the list"))
+selection(arr)
+print(arr)
