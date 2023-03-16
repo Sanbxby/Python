@@ -1,0 +1,12 @@
+def linear(arr,x):
+    for y in range(0,len(arr)):
+        if (x==arr[y]):
+            return y
+    return -1
+arr=eval(input("Enter the list"))
+x=int(input("Element to be searched"))
+a=linear(arr,x)
+if(a==-1):
+    print("Element not found")
+else:
+    print("Element found at index", a)
