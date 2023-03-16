@@ -7,11 +7,11 @@ def search(ele,high,low,arr):
             low=mid+1
         else:
             high=mid-1
-    return 0
+    return -1
 arr=eval(input("Enter the list"))
 ele=int(input("Enter the element to be searched"))
 result=search(ele,len(arr)-1,0,arr)
-if result==0:
+if result==-1:
     print("Element Not a Part of List")
 else:
     print("Element found at index: ", result)
